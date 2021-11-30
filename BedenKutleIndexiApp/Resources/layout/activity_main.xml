@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.circularreveal.CircularRevealLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Boyunuz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/boyTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Kilonuz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/kiloTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:hint="Yaşınız"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yasTxt"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Cinsiyetiniz"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/cinsiyetRdg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erkek"
+            android:id="@+id/erkekRdBtn"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kadın"
+            android:id="@+id/kadinRdBtn"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Hesapla"
+            android:textAllCaps="false"
+            android:id="@+id/hesaplaBtn"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Temizle"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/temizleBtn"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sonucListView"/>
+
+</android.support.design.circularreveal.CircularRevealLinearLayout>
